@@ -2,7 +2,7 @@
 Badge plugin for OctoberCMS
 
 ## What is it ##
-It enabled your OctoberCMS projects to generate and serve badges as per the [Shields badge specification](https://github.com/badges/shields).
+It enables your OctoberCMS projects to generate and serve badges as per the [Shields badge specification](https://github.com/badges/shields).
 
 ## Installation ##
 #### MarketPlace Installation ####
