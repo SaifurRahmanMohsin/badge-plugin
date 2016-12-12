@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    subject:
+        label: mohsin.badge::lang.badge.subject.label
+
+    status:
+        label: mohsin.badge::lang.badge.status.label
+
+    color:
+        label: mohsin.badge::lang.badge.color.label
+
+    style:
+        label: mohsin.badge::lang.badge.style.label
+
+    hits:
+        label: mohsin.badge::lang.badge.hits.label

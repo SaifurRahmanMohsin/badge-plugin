@@ -1,0 +1,10 @@
+# ===================================
+#  Rest Behavior Config
+# ===================================
+
+# Allowed Rest Actions
+allowedActions:
+  show:
+
+# Model Class name
+modelClass: Mohsin\Badge\Models\Badge

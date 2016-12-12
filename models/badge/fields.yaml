@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    subject:
+        label: mohsin.badge::lang.badge.subject.label
+        commentAbove: mohsin.badge::lang.badge.subject.comment
+        span: left
+
+    badge_preview:
+        label: mohsin.badge::lang.badge.badge_preview.label
+        commentAbove: mohsin.badge::lang.badge.badge_preview.comment
+        type: Mohsin\Badge\Widgets\Badge
+        dependsOn: [subject, status, color, style]
+        span: right
+        disabled: true
+
+    status:
+        label: mohsin.badge::lang.badge.status.label
+        commentAbove: mohsin.badge::lang.badge.status.comment
+
+    color:
+        label: mohsin.badge::lang.badge.color.label
+        commentAbove: mohsin.badge::lang.badge.color.comment
+        type: colorpicker
+        default: '#27ae60'
+
+    style:
+        label: mohsin.badge::lang.badge.style.label
+        commentAbove: mohsin.badge::lang.badge.style.comment
+        type: dropdown

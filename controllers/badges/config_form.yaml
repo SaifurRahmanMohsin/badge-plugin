@@ -1,0 +1,27 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: mohsin.badge::lang.badge.singular
+
+# Model Form Field configuration
+form: $/mohsin/badge/models/badge/fields.yaml
+
+# Model Class name
+modelClass: Mohsin\Badge\Models\Badge
+
+# Default redirect location
+defaultRedirect: mohsin/badge/badges
+
+# Create page
+create:
+    title: mohsin.badge::lang.controller.form.create_badge
+    redirect: mohsin/badge/badges/update/:id
+    redirectClose: mohsin/badge/badges
+
+# Update page
+update:
+    title: mohsin.badge::lang.controller.form.edit_badge
+    redirect: mohsin/badge/badges
+    redirectClose: mohsin/badge/badges

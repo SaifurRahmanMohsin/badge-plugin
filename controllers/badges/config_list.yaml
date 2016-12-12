@@ -1,0 +1,36 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# Model List Column configuration
+list: $/mohsin/badge/models/badge/columns.yaml
+
+# Model Class name
+modelClass: Mohsin\Badge\Models\Badge
+
+# List Title
+title: mohsin.badge::lang.controller.list.manage_badges
+
+# Link URL for each record
+recordUrl: mohsin/badge/badges/update/:id
+
+# Message to display if the list is empty
+noRecordsMessage: backend::lang.list.no_records
+
+# Records to display per page
+recordsPerPage: 20
+
+# Displays the list column set up button
+showSetup: true
+
+# Displays the sorting link on each column
+showSorting: true
+
+# Toolbar widget configuration
+toolbar:
+    # Partial for toolbar buttons
+    buttons: list_toolbar
+
+    # Search widget configuration
+    search:
+        prompt: backend::lang.list.search_prompt

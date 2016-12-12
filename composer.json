@@ -1,0 +1,15 @@
+{
+    "name": "mohsin/badge",
+    "description": "Badge Poser Service",
+    "homepage": "http://imoz.in",
+    "keywords": ["badge", "poser","shields"],
+    "authors": [
+        {
+            "name": "Saifur Rahman Mohsin",
+            "email": "mohsin92@me.com"
+        }
+    ],
+    "require": {
+        "badges/poser": "1.2.2"
+    }
+}

@@ -1,0 +1,17 @@
+<?php if ($field->label): ?>
+    <label for="<?= $this->getId() ?>">
+        <?= e(trans($field->label)) ?>
+    </label>
+<?php endif ?>
+
+<?php if ($field->comment && $field->commentPosition == 'above'): ?>
+    <p class="help-block before-field"><?= e(trans($field->comment)) ?></p>
+<?php endif ?>
+<div class="form-control">
+    <span
+        id="<?= $this->getId() ?>"
+        style="display: table; margin: 0 auto;"
+        >
+        <?= $badge ?>
+    </span>
+</div>
