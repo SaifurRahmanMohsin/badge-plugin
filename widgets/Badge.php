@@ -6,8 +6,6 @@ use Mohsin\Badge\Models\Badge as BadgeModel;
 
 class Badge extends ReportWidgetBase
 {
-    use \System\Traits\PropertyContainer;
-
     /**
      * @var string A unique alias to identify this widget.
      */
