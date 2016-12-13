@@ -66,10 +66,17 @@ class Badge extends ReportWidgetBase
         } else {
             $id = $this->property('badge');
             $badge = BadgeModel::find($id);
-            $subject = $badge -> subject;
-            $status = $badge -> status;
-            $color = $badge -> color;
-            $format = $badge -> style;
+            if($badge == null) {
+              $subject = 'Subject';
+              $status = 'Status';
+              $color = '#27ae60';
+              $format = 'flat-square';
+            } else {
+              $subject = $badge -> subject;
+              $status = $badge -> status;
+              $color = $badge -> color;
+              $format = $badge -> style;
+            }
         }
 
         $badge = BadgeMaker::instance()->getBadge($subject, $status, $color, $format);

@@ -1,3 +1,4 @@
 1.0.1:
   - First version of Badges
   - create_badges_table.php
+1.0.2: Bug fix, added missing default values for report widget
