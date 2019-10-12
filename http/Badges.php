@@ -17,17 +17,15 @@ class Badges extends Controller
 
     public function show($id)
     {
-        if(($badge = Badge::find($id)))
-          {
+        if (($badge = Badge::find($id))) {
             $subject = $badge -> subject;
             $status = $badge -> status;
             $color = $badge -> color;
             $format = $badge -> style;
             $badge -> hit();
             return BadgeMaker::instance()->getBadge($subject, $status, $color, $format);
-          }
-        else
-          return response()->json(e(trans('mohsin.badge::lang.controller.invalid_badge')), 404);
+        } else {
+            return response()->json(e(trans('mohsin.badge::lang.controller.invalid_badge')), 404);
+        }
     }
-
 }

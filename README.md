@@ -1,4 +1,4 @@
-# [Badge Plugin](https://github.com/SaifurRahmanMohsin/Badge-Plugin) #
+# [Badge Plugin](https://github.com/SaifurRahmanMohsin/oc-badge-plugin) #
 Badge plugin for OctoberCMS
 
 ## What is it ##

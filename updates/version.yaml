@@ -2,3 +2,4 @@
   - First version of Badges
   - create_badges_table.php
 1.0.2: Bug fix, added missing default values for report widget
+1.0.3: Updated to the new REST API provider.

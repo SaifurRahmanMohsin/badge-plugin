@@ -9,6 +9,10 @@ use System\Classes\SettingsManager;
  */
 class Plugin extends PluginBase
 {
+    /**
+     * @var array Plugin dependencies
+     */
+    public $require = ['Mohsin.Rest'];
 
     /**
      * Returns information about this plugin.
@@ -73,4 +77,18 @@ class Plugin extends PluginBase
         ];
     }
 
+    /**
+     * Registers API nodes exposed by this plugin.
+     *
+     * @return array
+     */
+    public function registerNodes()
+    {
+        return [
+            'badges' => [
+                'controller' => 'Mohsin\Badge\Http\Badges',
+                'only'       => ['show']
+            ]
+        ];
+    }
 }

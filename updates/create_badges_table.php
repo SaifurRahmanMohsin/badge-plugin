@@ -8,13 +8,13 @@ class CreateBadgesTable extends Migration
 {
     public function up()
     {
-        Schema::create('mohsin_badges', function(Blueprint $table) {
+        Schema::create('mohsin_badges', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('subject');
             $table->string('status');
             $table->string('color', 7);
-            $table->bigInteger('hits');
+            $table->bigInteger('hits')->default(0);
             $table->enum('style', ['flat', 'svg', 'flat-square', 'plastic']);
             $table->timestamps();
         });

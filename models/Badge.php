@@ -37,11 +37,8 @@ class Badge extends Model
      */
     public function hit()
     {
-        $this
-            ->newQuery()
-            ->where('id', $this->id)
-            ->update(['hits' => $this -> hits + 1])
-        ;
+        $this->newQuery()
+             ->where('id', $this->id)
+             ->update(['hits' => $this->hits + 1]);
     }
-
 }
