@@ -1,8 +1,9 @@
 {
-    "name": "mohsin/badge",
+    "name": "mohsin/oc-badge-plugin",
     "description": "Badge Poser Service",
     "homepage": "http://imoz.in",
     "keywords": ["badge", "poser","shields"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Saifur Rahman Mohsin",
@@ -10,6 +11,7 @@
         }
     ],
     "require": {
-        "badges/poser": "1.2.2"
+        "badges/poser": "1.2.2",
+        "mohsin/oc-rest-plugin": "1.0.0"
     }
 }
